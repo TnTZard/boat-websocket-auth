@@ -29,6 +29,7 @@ public class SocketClientConfigure extends ClientEndpointConfig.Configurator {
         try {
             RestTemplate client = new RestTemplate();
             HttpMethod method = HttpMethod.POST;
+            String api = "http://open.zwiivc.com/usvapi/login";
             Map<String, Object> jsonMap = new HashMap<>();
             jsonMap.put("name", "anzhi");
             jsonMap.put("pwd", "anzhi123456");
